@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Рево-кофе</title>
-    <link rel="stylesheet" href="/practice_2/styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body>
@@ -103,7 +103,7 @@
                     </div>
                 </article>
 
-                <article>
+                <article class="product_card">
                     <img class="product_card_image" src="assets/images/coffee_orange.png" alt="Оригинальный кофе">
                     <div class="product_card_info">
                     <h4 class="product_card_category">119.99</h4>
@@ -117,7 +117,7 @@
                     </div>
                 </article>
 
-                <article>
+                <article class="product_card">
                     <img class="product_card_image" src="assets/images/coffe_blue.png" alt="Кофе на каждый день">
                     <div class="product_card_info">
                     <h4 class="product_card_category">89.99</h4>
@@ -130,7 +130,7 @@
                     </div>
                 </article>
 
-                <article>
+                <article class="product_card">
                     <img class="product_card_image" src="assets/images/coffee_brown.png" alt="Кофе 'Дам да'">
                     <div class="product_card_info">
                     <h4 class="product_card_category">149.99</h4>
@@ -148,7 +148,7 @@
 
 
 
-        <section id="coffee_gift class section--coffee_gift">
+        <section id="coffee_gift" class="section--coffee_gift">
             <h2 class="section_title">Подарочные наборы</h2>
             <div class="gift_block">
                 <img class="gift_block_image" src="assets/images/coffee_gift.png" alt="Подарочный набор">
@@ -164,14 +164,14 @@
                 <div class="gift_info">
                 <img class="gift_block_icon" src="assets/icons/IC_coffee.png" alt="Зерна">
                 <h5 class="gift_block_label">100% арабика</h5>
-                <p class="gift_block_decribtion">Однозначно, многие известные личности, инициированные исключительно синтетически, в&nbsp;равной
+                <p class="gift_block_description">Однозначно, многие известные личности, инициированные исключительно синтетически, в&nbsp;равной
                     степени предоставлены
                     сами себе.</p>
                 </div>
                 <div class="gift_info">
                 <img class="gift_block_icon" src="assets/icons/IC_Mountain.png" alt="Гора">
                 <h5 class="gift_block_label">Высокогорье</h5>
-                <p class="gift_block_decribtion">Повседневная практика показывает, что перспективное планирование играет определяющее значение для
+                <p class="gift_block_description">Повседневная практика показывает, что перспективное планирование играет определяющее значение для
                     анализа существующих
                     паттернов поведения.</p>
                 </div>
@@ -179,7 +179,7 @@
             </div>
         </section>
 
-        <section id="combo" class="section--section--combo">
+        <section id="combo" class="section section--combo">
             <h2 class="section_title">Комбо наборы</h2>
             <div class="section_content"> 
                 <article class="combo_card">
@@ -211,6 +211,31 @@
 
             </div>
         </section>
+
+        <section class="masonry-grid">
+            <h2 class="section_title">Дополнительные материалы</h2>
+            <div class="masonry-grid__container">
+                <article class="masonry-item masonry-item--short">
+                    <h3>Кратко</h3>
+                    <p>Короткое описание.</p>
+                </article>
+                <article class="masonry-item masonry-item--tall">
+                    <h3>Подробно</h3>
+                    <p>Длинное описание с кучей текста, чтобы карточка была выше других и показывала, как работает
+                        masonry-сетка.</p>
+                </article>
+                <article class="masonry-item">
+                    <h3>Средне</h3>
+                    <p>Обычное описание.</p>
+                </article>
+                <article class="masonry-item masonry-item--very-tall">
+                    <h3>Очень подробно</h3>
+                    <p>Полное описание со всеми техническими характеристиками, особенностями применения и рекомендациями по
+                        использованию в различных условиях. И ещё текст, и ещё, и ещё!</p>
+                </article>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">

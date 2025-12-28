@@ -106,15 +106,6 @@ html {
     margin: 0 auto;
 }
 
-.features_grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
 .features_info {
     flex: 1;
     min-width: 0;
@@ -153,31 +144,22 @@ html {
     color: #555;
 }
 
-.product_сard {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
+.product_card {
     background: #fff;
-    padding: 1rem;
+    padding: 1.5rem;
     border: 1px solid #eaeaea;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .product_card_info {
     flex: 1;
     min-width: 0;
+    max-width: 100%;
 }
 
-.products_grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
 
 .product_card:hover {
     transform: translateY(-5px);
@@ -214,14 +196,6 @@ html {
     background-color: #f9f7f2;
 }
 
-.gift_grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
 
 .gift_block{
     max-width: 800px;
@@ -313,7 +287,149 @@ html {
     color: #555;
 }
 
-/* ----- footer ----- */
+.features_grid,
+.products_grid,
+.gift_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    ;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.masonry-grid__container {
+    column-count: 3;
+    column-gap: 24px;
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.masonry-item {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 1em;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    break-inside: avoid;
+    transition: transform 0.3s ease;
+}
+
+.masonry-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 991px) {
+    .masonry-grid__container {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 575px) {
+    .masonry-grid__container {
+        column-count: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .products_grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
+    АДАПТИВНОСТЬ (Desktop First)
+   ======================================== */
+
+/* Ноутбуки и меньше */
+@media (max-width: 1199px) {
+    .header_title {
+        font-size: 2rem;
+    }
+
+    .section_title {
+        font-size: 1.75rem;
+    }
+}
+
+/* Планшеты */
+@media (max-width: 991px) {
+    .nav_list {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .header_banner {
+        max-width: 600px;
+    }
+}
+
+/* Мобильные */
+@media (max-width: 767px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .header_title {
+        font-size: 1.75rem;
+    }
+
+    .section {
+        padding: 2rem 1rem;
+    }
+
+    .section_title {
+        font-size: 1.5rem;
+    }
+
+    .gift_block_title {
+        font-size: 1.5rem;
+    }
+
+    .gift_block_image,
+    .product_card_image,
+    .combo_card_image {
+        max-width: 200px;
+    }
+
+    .card_icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Очень маленькие экраны*/
+@media (max-width: 480px) {
+    .header_title {
+        font-size: 1.5rem;
+    }
+
+    .section_title {
+        font-size: 1.25rem;
+    }
+
+    .card_title,
+    .product_card_title,
+    .combo_card_name,
+    .gift_block_title {
+        font-size: 1.125rem;
+    }
+
+    .card_text,
+    .product_card_text,
+    .combo_card_text,
+    .gift_block_text,
+    .gift_block_decribtion {
+        font-size: 0.875rem;
+    }
+}
+
 .footer {
     padding: 2rem 1.5rem;
     background-color: #2c5530;
@@ -327,3 +443,5 @@ html {
     font-size: 0.9375rem;
     line-height: 1.7;
 }
+
+
