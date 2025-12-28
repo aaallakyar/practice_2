@@ -9,29 +9,29 @@
 </head>
 
 <body>
-    <header>
-        <h1>Самый вкусный Рево-кофе</h1>
-        <img src="assets/images/banner.png" alt="Баннер главной страницы">
-        <nav>
-            <ul>
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li>
+    <header class="header">
+        <h1 class="header_title">Самый вкусный Рево-кофе</h1>
+        <img class="header_banner" src="assets/images/banner.png" alt="Баннер главной страницы">
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav_item"><a class="nav_link" href="#features">О нас</a></li>
+                <li class="nav_item"><a class="nav_link" href="#products">Продукты</a></li>
+                <li class="nav_item"><a class="nav_link" href="#gifts">Подарки</a></li>
+                <li class="nav_item"><a class="nav_link" href="#combo">Комбо</a></li>
+                <li class="nav_item"><a class="nav_link" href="#contact">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="main">
 
-        <section>
-            <h2>Заголовок второго уровня</h2>
-            <div>
-                <article>
-                    <img src="assets/icons/mag.png" alt="Иконка кофейный магазин">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Кстати, тщательные исследования конкурентов являются только методом политического участия
+        <section id="features" class="section section--features">
+            <h2 class="section_title">Почему выбирают нас</h2>
+            <div class="section_content">
+                <article class="card">
+                    <img class="card_icon" src="assets/icons/mag.png" alt="Иконка кофейный магазин">
+                    <h3 class="card_title">Свежая обжарка</h3>
+                    <p class="card_text">Кстати, тщательные исследования конкурентов являются только методом политического участия
                         и&nbsp;в&nbsp;равной степени
                         предоставлены сами себе. С&nbsp;другой стороны, консультация с&nbsp;широким активом позволяет
                         выполнить важные задания
@@ -40,10 +40,10 @@
                         и&nbsp;функционально разнесены на&nbsp;независимые элементы.</p>
                 </article>
 
-                <article>
-                    <img src="assets/icons/beans.png" alt="Иконка зерна">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Являясь всего лишь частью общей картины, некоторые особенности внутренней политики ограничены
+                <article class="card">
+                    <img class="card_icon" src="assets/icons/beans.png" alt="Иконка зерна">
+                    <h3 class="card_title">Лучшие сорта</h3>
+                    <p class="card_text">Являясь всего лишь частью общей картины, некоторые особенности внутренней политики ограничены
                         исключительно образом
                         мышления. Также как перспективное планирование предполагает независимые способы реализации
                         системы обучения кадров,
@@ -52,10 +52,10 @@
                         широкому кругу (специалистов) участие в&nbsp;формировании глубокомысленных рассуждений.</p>
                 </article>
 
-                <article>
-                    <img src="assets/icons/beans_pack.png" alt="Упаковки кофейных зерен">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Сложно сказать, почему представители современных социальных резервов освещают чрезвычайно
+                <article class="card">
+                    <img class="card_icon" src="assets/icons/beans_pack.png" alt="Упаковки кофейных зерен">
+                    <h3 class="card_title">Упаковка</h3>
+                    <p class="card_text">Сложно сказать, почему представители современных социальных резервов освещают чрезвычайно
                         интересные особенности картины
                         в&nbsp;целом, однако конкретные выводы, разумеется, подвергнуты целой серии независимых
                         исследований. Для современного
@@ -63,10 +63,10 @@
                         перспектив.</p>
                 </article>
 
-                <article>
-                    <img src="assets/icons/mag.png" alt="Кофемашина">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Но разбавленное изрядной долей эмпатии, рациональное мышление представляет собой интересный
+                <article class="card">
+                    <img class="card_icon" src="assets/icons/mag.png" alt="Кофемашина">
+                    <h3 class="card_title">Технологии</h3>
+                    <p class="card_text">Но разбавленное изрядной долей эмпатии, рациональное мышление представляет собой интересный
                         эксперимент проверки
                         переосмысления внешнеэкономических политик. С учётом сложившейся международной обстановки,
                         глубокий уровень погружения
@@ -77,14 +77,14 @@
         </section>
 
 
-        <section>
-            <h2>Заголовок второго уровня</h2>
-            <div>
-                <article>
-                    <h4>Заголовок уровня 4</h4>
-                    <img src="assets/images/w_coffe_yellow.png" alt="Утренний кофе">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Равным образом, укрепление и&nbsp;развитие внутренней структуры в&nbsp;значительной степени
+        <section id="products" class="section section--products">
+            <h2 class="section_title">Наши продукты</h2>
+            <div class="section_content">
+                <article class="product_card">
+                    <h4 class="product_card_category">99.99</h4>
+                    <img class=" product_card_image" src="assets/images/w_coffe_yellow.png" alt="Утренний кофе">
+                    <h3 class="product_card_title">Утренний</h3>
+                    <p class="product_card_text">Равным образом, укрепление и&nbsp;развитие внутренней структуры в&nbsp;значительной степени
                         обусловливает важность
                         поэтапного и&nbsp;последовательного развития общества. В&nbsp;рамках спецификации современных
                         стандартов, некоторые
@@ -94,10 +94,10 @@
                 </article>
 
                 <article>
-                    <h4>Заголовок уровня 4</h4>
-                    <img src="assets/images/coffee_orange.png" alt="Оригинальный кофе">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Сложно сказать, почему многие известные личности набирают популярность среди определенных слоев
+                    <h4 class="product_card_category">119.99</h4>
+                    <img class=" product_card_image" src="assets/images/coffee_orange.png" alt="Оригинальный кофе">
+                    <h3 class="product_card_title">Оригинал</h3>
+                    <p class="product_card_text">Сложно сказать, почему многие известные личности набирают популярность среди определенных слоев
                         населения,
                         а&nbsp;значит, должны быть объединены в&nbsp;целые кластеры себе подобных. Современные
                         технологии достигли такого
@@ -106,10 +106,10 @@
                 </article>
 
                 <article>
-                    <h4>Заголовок уровня 4</h4>
-                    <img src="assets/images/coffe_blue.png" alt="Кофе на каждый день">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также независимые государства будут
+                    <h4 class="product_card_category">89.99</h4>
+                    <img class=" product_card_image" src="assets/images/coffe_blue.png" alt="Кофе на каждый день">
+                    <h3 class="product_card_title">Повседневный</h3>
+                    <p class="product_card_text">Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также независимые государства будут
                         в&nbsp;равной степени предоставлены
                         сами себе! Являясь всего лишь частью общей картины, элементы политического процесса будут
                         объявлены нарушающими
@@ -117,10 +117,10 @@
                 </article>
 
                 <article>
-                    <h4>Заголовок уровня 4</h4>
-                    <img src="assets/images/coffee_brown.png" alt="Кофе 'Дам да'">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>В&nbsp;частности, высокое качество позиционных исследований в&nbsp;значительной степени
+                    <h4 class="product_card_category">149.99</h4>
+                    <img class=" product_card_image" src="assets/images/coffee_brown.png" alt="Кофе 'Дам да'">
+                    <h3 class="product_card_title">Премиум</h3>
+                    <p class="product_card_text">В&nbsp;частности, высокое качество позиционных исследований в&nbsp;значительной степени
                         обусловливает важность
                         дальнейших направлений развития. Как принято считать, акционеры крупнейших компаний призывают
                         нас к&nbsp;новым
@@ -132,58 +132,58 @@
 
 
 
-        <section>
-            <h2>Заголовок второго уровня</h2>
-            <div>
-                <img src="assets/images/coffee_gift.png" alt="Подарочный набор">
-                <h4>Заголовок уровня 4</h4>
-                <h3>Заголовок уровня 3</h3>
-                <p>Принимая во&nbsp;внимание показатели успешности, экономическая повестка сегодняшнего дня обеспечивает
+        <section id="coffee_gift class section--coffee_gift">
+            <h2 class="section_title">Подарочные наборы</h2>
+            <div class="gift_block">
+                <img class="gift_block_image" src="assets/images/coffee_gift.png" alt="Подарочный набор">
+                <h4 class="gift_block_sub">Эксклюзив</h4>
+                <h3 class="gift_block_title">Набор</h3>
+                <p class="gift_block_text">Принимая во&nbsp;внимание показатели успешности, экономическая повестка сегодняшнего дня обеспечивает
                     широкому кругу
                     (специалистов) участие в&nbsp;формировании соответствующих условий активизации. Следует отметить,
                     что курс
                     на&nbsp;социально-ориентированный национальный проект требует анализа направлений прогрессивного
                     развития.</p>
-                <img src="assets/icons/IC_coffee.png" alt="Зерна">
-                <h5>Заголовок уровня 5</h5>
-                <p>Однозначно, многие известные личности, инициированные исключительно синтетически, в&nbsp;равной
+                <img class="gift_block_icon" src="assets/icons/IC_coffee.png" alt="Зерна">
+                <h5 class="gift_block_label">100% арабика</h5>
+                <p class="gift_block_decribtion">Однозначно, многие известные личности, инициированные исключительно синтетически, в&nbsp;равной
                     степени предоставлены
                     сами себе.</p>
-                <img src="assets/icons/IC_Mountain.png" alt="Гора">
-                <h5>Заголовок уровня 5</h5>
-                <p>Повседневная практика показывает, что перспективное планирование играет определяющее значение для
+                <img class="gift_block_icon" src="assets/icons/IC_Mountain.png" alt="Гора">
+                <h5 class="gift_block_label">Высокогорье</h5>
+                <p class="gift_block_decribtion">Повседневная практика показывает, что перспективное планирование играет определяющее значение для
                     анализа существующих
                     паттернов поведения.</p>
             </div>
         </section>
 
-        <section>
-            <h2>Заголовок второго уровня</h2>
-            <div>
+        <section id="combo" class="section--section--combo">
+            <h2 class="section_title">Комбо наборы</h2>
+            <div class="section_content"> 
 
-                <article>
-                    <img src="assets/images/w_coffee_brown.png" alt="Кофе На каждый день">
-                    <h4>Заголовок уровня 4</h4>
-                    <h5>Заголовок уровня 5</h5>
-                    <p>Наше дело не&nbsp;так однозначно, как может показаться: сплочённость команды профессионалов
+                <article class="combo_card">
+                    <img class="combo_card_image" src="assets/images/w_coffee_brown.png" alt="Кофе На каждый день">
+                    <h4 class="combo_card_brand">Базовый</h4>
+                    <h5 class="combo_card_name">169.99</h5>
+                    <p class="combo_card_text">Наше дело не&nbsp;так однозначно, как может показаться: сплочённость команды профессионалов
                         не&nbsp;оставляет шанса для
                         новых принципов формирования материально-технической и&nbsp;кадровой базы.</p>
                 </article>
 
-                <article>
-                    <img src="assets/images/w_coffee_blue.png" alt="Кофе 'Дам Да'">
-                    <h4>Заголовок уровня 4</h4>
-                    <h5>Заголовок уровня 5</h5>
-                    <p>Разнообразный и&nbsp;богатый опыт говорит нам, что современная методология разработки требует
+                <article class="combo_card">
+                    <img class="combo_card_image" src="assets/images/w_coffee_blue.png" alt="Кофе 'Дам Да'">
+                    <h4 class="combo_card_brand">Премиум</h4>
+                    <h5 class="combo_card_name">279.99</h5>
+                    <p class="combo_card_text">Разнообразный и&nbsp;богатый опыт говорит нам, что современная методология разработки требует
                         определения
                         и&nbsp;уточнения дальнейших направлений развития.</p>
                 </article>
 
-                <article>
-                    <img src="assets/images/coffee_red.png" alt="Кофе Honey">
-                    <h4>Заголовок уровня 4</h4>
-                    <h5>Заголовок уровня 5</h5>
-                    <p>В&nbsp;целом, конечно, начало повседневной работы по&nbsp;формированию позиции способствует
+                <article class="combo_card">
+                    <img class="combo_card_image" src="assets/images/coffee_red.png" alt="Кофе Honey">
+                    <h4 class="combo_card_brand">Специальный</h4>
+                    <h5 class="combo_card_name">199.99</h5>
+                    <p class="combo_card_text">В&nbsp;целом, конечно, начало повседневной работы по&nbsp;формированию позиции способствует
                         повышению качества
                         экономической целесообразности принимаемых решений.</p>
                 </article>
@@ -192,8 +192,8 @@
         </section>
     </main>
 
-    <footer>
-        <p>Сложно сказать, почему явные признаки победы институционализации, превозмогая сложившуюся непростую
+    <footer class="footer">
+        <p class="footer_text">Сложно сказать, почему явные признаки победы институционализации, превозмогая сложившуюся непростую
             экономическую
             ситуацию, преданы социально-демократической анафеме. Следует отметить, что повышение уровня гражданского
             сознания
