@@ -4,26 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключение шрифтов -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Мобильные стили -->
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 1024px)">
     <title>Рево-кофе</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
     <header class="header">
-        <h1 class="header_title">Самый вкусный Рево-кофе</h1>
-        <img class="header_banner" src="assets/images/banner.png" alt="Баннер главной страницы">
-        <nav class="nav">
-            <ul class="nav_list">
-                <li class="nav_item"><a class="nav_link" href="#features">О нас</a></li>
-                <li class="nav_item"><a class="nav_link" href="#products">Продукты</a></li>
-                <li class="nav_item"><a class="nav_link" href="#gifts">Подарки</a></li>
-                <li class="nav_item"><a class="nav_link" href="#combo">Комбо</a></li>
-                <li class="nav_item"><a class="nav_link" href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">
+                    <img src="assets/images/banner.png" alt="Рево-кофе" width="120" height="40">
+                </a>
+
+                <!-- Гамбургер-кнопка -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+                    <span class="menu-toggle_line"></span>
+                    <span class="menu-toggle_line"></span>
+                    <span class="menu-toggle_line"></span>
+                </button>
+    
+                <!-- Навигация -->
+                <nav class="nav" id="mainNav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#features" class="nav__link active">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Продукты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#gifts" class="nav__link">Подарки</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#combo" class="nav__link">Комбо</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="btn btn--primary header__cta">Заказать</button>
+            </div>
+        </div>
     </header>
 
     <main class="main">
+
+        <h1 class="header_title">Самый вкусный Рево-кофе</h1>
+        <img class="main__banner" src="assets/images/banner.png" alt="Баннер главной страницы">
 
         <section id="features" class="section section--features">
             <h2 class="section_title">Почему выбирают нас</h2>
@@ -249,6 +283,8 @@
             ассоциативно
             распределены по&nbsp;отраслям</p>
     </footer>
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+    <script src="./scripts/menu.js"></script>
 </body>
 
 </html>
